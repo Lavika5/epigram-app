@@ -26,7 +26,7 @@ The Epigram Application is a web-based platform that prints a random epigram fro
 2. **Set Up the Back End**:
    - Navigate to the `backend` directory:
    ```bash
-   cd backend
+   cd back-end
    ```
    - Run the back-end application using Maven:
    ```bash
@@ -36,7 +36,7 @@ The Epigram Application is a web-based platform that prints a random epigram fro
 3. **Set Up the Front End**:
    - Navigate to the `frontend` directory:
    ```bash
-   cd frontend
+   cd front-end
    ```
    - Install dependencies:
    ```bash
