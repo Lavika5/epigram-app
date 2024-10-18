@@ -22,7 +22,6 @@ The Epigram Application is a web-based platform that prints a random epigram fro
    ```bash
    git clone https://github.com/your-username/epigram-app.git
    cd epigram-app
-Certainly! Here’s the complete **Set Up** section formatted in one code block for your README file:
 
 2. **Set Up the Back End**:
    - Navigate to the `backend` directory:
