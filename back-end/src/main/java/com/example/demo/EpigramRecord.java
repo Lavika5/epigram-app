@@ -38,10 +38,10 @@ public class EpigramRecord {
 
     public void insertEpigram(String text, String source) {
         if (source == null || source.isEmpty()) {
-            String sql = "INSERT INTO epigrams (epigram_text, epigram_dateAdded) VALUES (?, DATE('now'))";
+            String sql = "INSERT INTO epigrams (text, dateAdded) VALUES (?, DATE('now'))";
             jdbcTemplate.update(sql, text);
         } else {
-            String sql = "INSERT INTO epigrams (epigram_text, epigram_dateAdded, epigram_source) VALUES (?, DATE('now'), ?)";
+            String sql = "INSERT INTO epigrams (text, dateAdded, source) VALUES (?, DATE('now'), ?)";
             jdbcTemplate.update(sql, text, source);
         }
     }
@@ -64,10 +64,10 @@ public class EpigramRecord {
     private static class EpigramRowMapper implements RowMapper<Epigram> {
         @Override
         public Epigram mapRow(@SuppressWarnings("null") ResultSet rset, int row_num) throws SQLException {
-            Long id = rset.getLong("epigram_id");
-            String text = rset.getString("epigram_text");
-            String dateAdded = rset.getString("epigram_dateAdded");
-            String source = rset.getString("epigram_source");
+            Long id = rset.getLong("id");
+            String text = rset.getString("text");
+            String dateAdded = rset.getString("dateAdded");
+            String source = rset.getString("source");
 
             if (source != null) {
                 return new Epigram(id, text, dateAdded, source); // Epigram with source
