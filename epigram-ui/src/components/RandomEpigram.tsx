@@ -81,8 +81,8 @@ const RandomEpigram: React.FC = () => {
           <p style={{ fontSize: '26px', marginTop: '5px' }}>
             <strong>Epigram:</strong> <span style={{ color: "#8B1E4D" }}>"{epigram.text}"</span>
           </p>
-          {epigram.source && <p><strong>Source:</strong> <span style={{ color: "#8B1E4D" }}>"{epigram.source}"</span></p>}
-          {epigram.dateAdded && <p><strong>Date Added:</strong><span style={{ color: "#8B1E4D" }}>"{epigram.dateAdded}"</span></p>}
+          {epigram.source && <p><strong>Source:</strong> <span style={{ color: "#8B1E4D" }}>- {epigram.source}</span></p>}
+          {epigram.dateAdded && <p><strong>Date Added:</strong><span style={{ color: "#8B1E4D" }}>{epigram.dateAdded}</span></p>}
         </div>
       ) : (
         <p>Epigram loading...</p>
