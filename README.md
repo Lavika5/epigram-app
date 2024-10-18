@@ -36,7 +36,7 @@ The Epigram Application is a web-based platform that prints a random epigram fro
 3. **Set Up the Front End**:
    - Navigate to the `frontend` directory:
    ```bash
-   cd front-end
+   cd epigram-ui
    ```
    - Install dependencies:
    ```bash
