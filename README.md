@@ -22,13 +22,37 @@ The Epigram Application is a web-based platform that prints a random epigram fro
    ```bash
    git clone https://github.com/your-username/epigram-app.git
    cd epigram-app
-2. **Set up the back-end**:
-     cd backend
-   ./mvnw spring-boot:run
-3. **Set up the front-end**:
-  cd frontend
-  npm install
-  npm start
-4. Open your browser and navigate to http://localhost:3000 for the front end.
+Certainly! Here’s the complete **Set Up** section formatted in one code block for your README file:
+
+2. **Set Up the Back End**:
+   - Navigate to the `backend` directory:
+   ```bash
+   cd backend
+   ```
+   - Run the back-end application using Maven:
+   ```bash
+   mvn spring-boot:run
+   ```
+
+3. **Set Up the Front End**:
+   - Navigate to the `frontend` directory:
+   ```bash
+   cd frontend
+   ```
+   - Install dependencies:
+   ```bash
+   npm install
+   ```
+   - Start the front-end application:
+   ```bash
+   npm start
+   ```
+
+4. **Access the Application**:
+   - Open your browser and navigate to:
+   ```bash
+   http://localhost:3000
+   ```
+   - This URL will take you to the front-end of the application.
 
 
