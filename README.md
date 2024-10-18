@@ -1,4 +1,4 @@
-# Epigram Application
+# Epigram Application -Epicgram
 
 ## Description
 The Epigram Application is a web-based platform that prints a random epigram from a database of epigrams and allows users to contribute their own epigrams.
